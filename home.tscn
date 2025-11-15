@@ -1,13 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dl13gsjox10kh"]
+[gd_scene load_steps=3 format=3 uid="uid://dl13gsjox10kh"]
 
 [ext_resource type="Script" uid="uid://bb5enlsmfj7al" path="res://home.gd" id="1_1ey7h"]
 [ext_resource type="Script" uid="uid://r0v3lpor8lph" path="res://gradient_color.gd" id="1_tt30a"]
-
-[sub_resource type="Gradient" id="Gradient_1ey7h"]
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_o1ld7"]
-gradient = SubResource("Gradient_1ey7h")
-fill_from = Vector2(1, 1)
 
 [node name="Home" type="Control"]
 layout_mode = 3
@@ -33,5 +27,4 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("GradientTexture2D_o1ld7")
 script = ExtResource("1_tt30a")

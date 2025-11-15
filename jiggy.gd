@@ -7,13 +7,13 @@ func _enter_tree() -> void:
 
 
 func fade_to_scene(path: String):
-	# Fade out
+	# Fade in
 	modulate.a = 0.0
 	while modulate.a < 1.0:
-		modulate.a += 0.005
+		modulate.a += 0.01
 		await get_tree().process_frame
 
-	# Fade in
+	# Fade out
 	modulate.a = 1.0
 	while modulate.a > 0.0:
 		modulate.a -= 0.01
