@@ -7,7 +7,7 @@
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_o1ld7"]
 gradient = SubResource("Gradient_1ey7h")
-fill_to = Vector2(0, 1)
+fill_from = Vector2(1, 1)
 
 [node name="Home" type="Control"]
 layout_mode = 3
@@ -25,7 +25,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_tt30a")
 
 [node name="TextureRect" type="TextureRect" parent="ColorRect"]
 layout_mode = 1
@@ -35,4 +34,4 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("GradientTexture2D_o1ld7")
-flip_v = true
+script = ExtResource("1_tt30a")

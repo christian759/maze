@@ -1,4 +1,4 @@
-extends ColorRect
+extends TextureRect
 
 # Example color sets
 var gradients = [
@@ -16,6 +16,9 @@ func set_gradient(index: int):
 	# Create GradientTexture2D
 	var grad_tex := GradientTexture2D.new()
 	grad_tex.gradient = grad
+	grad_tex.fill_from = Vector2(1, 1)
+	grad_tex.fill_to = Vector2(1, 0)
+	
 
 	# Assign as texture (works in Godot 4)
 	self.texture = grad_tex
