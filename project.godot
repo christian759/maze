@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="maze"
+run/main_scene="uid://4wms3defi5v2"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/handheld/orientation=1
 
 [rendering]
 

@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://4wms3defi5v2"]
+[gd_scene load_steps=3 format=3 uid="uid://4wms3defi5v2"]
 
+[ext_resource type="Script" uid="uid://caeh3w1es0ibh" path="res://jiggy.gd" id="1_5d2wc"]
 [ext_resource type="FontFile" uid="uid://b0tyq2cmleurq" path="res://A&S Jiggy Roman Regular/A&S Jiggy Roman Regular.ttf" id="1_h24ap"]
 
 [node name="Control" type="Control"]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_5d2wc")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -17,6 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.9515795, 0.95157963, 0.9515795, 1)
 
 [node name="Label" type="Label" parent="ColorRect"]
 layout_mode = 1
